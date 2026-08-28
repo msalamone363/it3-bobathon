@@ -1,1 +1,6 @@
-{}
+{
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "window.title": "IT3 Bob-a-thon Labs"
+}

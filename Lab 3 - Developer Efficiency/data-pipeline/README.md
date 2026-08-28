@@ -1,12 +1,11 @@
-# Truist Data Pipeline — Sample Repository
+# Data Pipeline — Sample Repository
 
-Welcome to the `truist-data-pipeline` sample project. This is a simplified Python data engineering
-codebase built for the Truist Bob-a-thon lab exercises.
+Welcome to the `data-pipeline` sample project. This is a simplified Python data engineering codebase built for the IT^3 Bob-a-thon lab exercises.
 
 ## What's in this repo
 
 ```
-truist-data-pipeline/
+data-pipeline/
 ├── README.md                     ← You are here
 ├── requirements.txt              ← Python dependencies
 ├── config/
@@ -50,7 +49,7 @@ pytest tests/
 Bob should already be running in your TechZone VM.  
 If you need to verify: open a terminal in Bob and run `bob --version`.
 
-See `resources/bob-installation.md` in the bobathon materials for full setup instructions.
+See your IBM facilitator or email madison.ramsey@ibm.com for full setup instructions.
 
 ---
 

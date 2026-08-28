@@ -1,9 +1,9 @@
 # Lab 3 — Developer Efficiency
-### Truist Bob-a-thon · Sep 24, 2026
+### IT^3 Bob-a-thon · Sep 24, 2026
 
 **Duration:** 90 minutes  
 **Language:** Python  
-**Repo:** `labs/lab3-client-specific/starter/truist-data-pipeline/`  
+**Repo:** `Lab 3 - Developer Efficiency/data-pipeline/`  
 **Difficulty:** Progressive — 7 incremental checkpoints, each harder than the last  
 **Questions?** Madison Ramsey — madison.ramsey@ibm.com
 
@@ -11,9 +11,7 @@
 
 ## 🎯 What you'll do
 
-Work through a realistic Python data engineering codebase (`truist-data-pipeline`) using Bob
-as your AI coding partner. Each checkpoint builds on the last. You don't need to finish all
-seven — work at your own pace. Checkpoints 6 and 7 are intentionally open-ended stretch goals.
+Work through a realistic Python data engineering codebase (`data-pipeline`) using Bob as your AI coding partner. Each checkpoint builds on the last. You don't need to finish all seven — work at your own pace. Checkpoints 6 and 7 are intentionally open-ended stretch goals.
 
 **By the end you'll be able to:**
 - Navigate and understand an unfamiliar Python project with Bob in minutes
@@ -28,10 +26,10 @@ seven — work at your own pace. Checkpoints 6 and 7 are intentionally open-ende
 
 ## 🗂 Repository overview
 
-Open Bob in the `truist-data-pipeline/` directory before starting.
+Open Bob in the `data-pipeline/` directory before starting.
 
 ```
-truist-data-pipeline/
+data-pipeline/
 ├── config/settings.py          ← Pipeline configuration (environment, credentials)
 ├── pipeline/
 │   ├── ingest.py               ← Load raw CSV transactions
@@ -141,7 +139,7 @@ truist-data-pipeline/
    Scan this codebase for security-sensitive patterns — hardcoded credentials, secrets in source code, or insecure environment variable fallbacks. Report anything suspicious.
    ```
 
-   > **Expected finding:** `config/settings.py` line 16 — hardcoded password fallback `"Tr0ist@Pipeline2024!"`.  
+   > **Expected finding:** `config/settings.py` line 16 — hardcoded password fallback `"B0nk@Pipeline2024!"`.  
    > Ask Bob to explain why this is a risk and suggest a fix.
 
 **✅ You're done when:** Bob has found the hardcoded credential and you've discussed how to remediate it.
@@ -318,7 +316,7 @@ DataFrame and produces a simple summary report:
 | Write a unit test | Manual authoring | Generated + explained in seconds |
 | ML code improvement (caching) | Requires profiling + architecture knowledge | Surfaced by Findings, explained, applied |
 
-**For a team of 10 Truist data engineers:** even 30 minutes saved per developer per day = **~130 hours/month** returned to the team.
+**For a team of 10 data engineers:** even 30 minutes saved per developer per day = **~130 hours/month** returned to the team.
 
 ---
 

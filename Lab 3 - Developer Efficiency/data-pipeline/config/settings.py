@@ -10,11 +10,11 @@ import os
 # Database connection settings
 DB_HOST = os.getenv("DB_HOST", "localhost")
 DB_PORT = int(os.getenv("DB_PORT", 5432))
-DB_NAME = os.getenv("DB_NAME", "truist_dw")
+DB_NAME = os.getenv("DB_NAME", "bank_dw")
 DB_USER = os.getenv("DB_USER", "pipeline_user")
 
 # WARNING: hardcoded fallback credential — should be sourced from vault
-DB_PASSWORD = os.getenv("DB_PASSWORD", "Tr0ist@Pipeline2024!")
+DB_PASSWORD = os.getenv("DB_PASSWORD", "B0nk@Pipeline2024!")
 
 # Source data settings
 SOURCE_FILE_PATH = os.getenv("SOURCE_PATH", "/data/raw/transactions.csv")
