@@ -9,7 +9,7 @@
 
 ---
 
-## 🎯 What you'll do
+## 🎯 Objectives
 
 Work through a realistic Python data engineering codebase (`data-pipeline`) using Bob as your AI coding partner. Each checkpoint builds on the last. You don't need to finish all seven — work at your own pace. Checkpoints 6 and 7 are intentionally open-ended stretch goals.
 
@@ -24,9 +24,13 @@ Work through a realistic Python data engineering codebase (`data-pipeline`) usin
 
 ---
 
-## 🗂 Repository overview
+## 📋 Setup
 
-Open Bob in the `data-pipeline/` directory before starting.
+Before starting, ensure you have:
+- [ ] Completed Lab 1
+- [ ] Bob running in your IDE or chat interface
+
+### 🗂 Repository overview
 
 ```
 data-pipeline/
@@ -49,6 +53,21 @@ data-pipeline/
 
 ---
 
+> 💬 **How to get the most out of each checkpoint:** Don't just run the suggested prompts and
+> move on — take a moment to **read Bob's response**. If something is unclear, surprising, or
+> you want to go deeper, ask a follow-up question before continuing. Bob holds the full context
+> of your conversation, so questions like *"Why did it do that?"*, *"What would happen if…?"*,
+> or *"Explain that last part in simpler terms"* are always fair game. The prompts in each
+> checkpoint are starting points, not scripts.
+
+> 🔧 **The pipeline is intentionally incomplete.** As you work through the checkpoints, Bob may
+> flag missing error handling, unimplemented stubs, TODOs, or other gaps in the codebase. This
+> is by design — the pipeline was built with deliberate imperfections to give you realistic
+> material to explore, debug, and improve. Treat anything Bob surfaces as an opportunity to
+> dig in further, not as something that's broken or wrong with your setup.
+
+---
+
 ## ✅ Checkpoint 1 — Orient in the Codebase
 *Goal: Use Bob to understand this project without reading every file. (~10 min)*
 
@@ -59,7 +78,7 @@ data-pipeline/
 
 1. Ask Bob to explain the project structure:
    ```
-   Explain the structure of this Python project. What does each top-level directory contain and what is each module responsible for?
+   Explain the structure of the Python project @Lab\ 3\ -\ Developer\ Efficiency/data-pipeline/  . What does each top-level directory contain and what is each module responsible for?
    ```
 
 2. Ask Bob to identify the entry point and describe what it does:
@@ -151,6 +170,11 @@ data-pipeline/
 
 > 💡 **Bob differentiator:** Bob can run tests, read the failure output, trace the root cause
 > through the code, and propose a fix — all in one conversation without you switching context.
+
+> 📺 **Viewing command output:** When Bob runs a terminal command, the output is displayed
+> directly in the chat. If it appears collapsed, click the output block to expand it and see
+> the full result. You can also type `@terminal` in the chat at any point to pull in the most
+> recent terminal output as context for your next question.
 
 **The bug:** `normalize_amounts` in `pipeline/transform.py` silently produces `NaN` values
 when all transaction amounts in a batch are identical. There is already a failing test for it.
@@ -254,12 +278,16 @@ column `is_weekend` to the DataFrame — `True` when the transaction occurred on
 
 ---
 
-## ✅ Checkpoint 7 — Build Something New *(Stretch — no finish line)*
+## ✅ Checkpoint 7 — Build Something New *(Stretch)*
 *Goal: Use Bob to scaffold and deliver a complete small feature end-to-end.*
 
-> 💡 **Bob differentiator:** Bob V2 uses sub-tasks and mode switching automatically —
-> it shifts from Ask → Plan → Agent as the work progresses, delegating focused subtasks
-> to keep the main conversation clean. Watch for Bob switching modes during this checkpoint.
+> 💡 **Bob differentiator:** Bob V2 can use sub-tasks and mode switching automatically —
+> shifting from Ask → Plan → Agent as the work progresses and delegating focused subtasks
+> to keep the main conversation clean. **This only happens if the Subtask permission is
+> enabled in Bob's auto-approve settings.** Enable it by hovering over the Auto-Approve
+> toolbar above the chat input and toggling **Subtask** on. If it's off, Bob will still
+> complete the work but won't break it into sub-tasks or switch modes automatically.
+> Watch for Bob switching modes during this checkpoint if Subtask is enabled.
 
 **The feature:** `pipeline/report.py` does **not exist yet** — you will create it from scratch
 using Bob. Add a `ReportGenerator` class to this new file that takes a validated, transformed
@@ -298,10 +326,10 @@ DataFrame and produces a simple summary report:
 
 6. Reflect:
    ```
-   Where in this feature did Bob save the most time? Where did you need to correct or redirect it?
+   Where in this feature did Bob save the most time?
    ```
 
-**✅ There is no finish line.** Keep going as long as you have time.
+**✅ There is no finish line.** Keep going as long as you have time. If you've exhausted this checkpoint and still have time remaining, head back to Checkpoint 6 and apply the other Bob Findings you didn't act on — each one is a self-contained improvement worth exploring.
 
 ---
 
@@ -332,6 +360,10 @@ After the lab:
 
 ## 🚀 Next steps
 
-- Complete the post-event survey (link provided by your facilitator)
-- Try Bob on one real task from your backlog this week
-- Questions or follow-up: **Madison Ramsey — madison.ramsey@ibm.com**
+1. **Claim your badge** — Follow the steps in [`BADGE_GUIDE.md`](../BADGE_GUIDE.md) to earn your IBM Bob Bobathon badge via Credly. Switch Bob to **Badge Issuer Lite** mode, say *"I'd like to claim my bobathon badge"*, and Bob will walk you through the rest. Takes about 5 minutes.
+
+2. **Complete the survey** — your facilitator will share the link at wrap-up. Your feedback helps shape future sessions, so please take a moment to fill it in.
+
+3. **Keep exploring** — still have time? Ask Bob anything you're curious about, revisit a checkpoint you didn't finish, or try a prompt on something from your own work. There's no better time to experiment than right now with a facilitator nearby.
+
+4. **Questions?** Reach out to Madison Ramsey — madison.ramsey@ibm.com
