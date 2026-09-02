@@ -21,11 +21,13 @@ note -- when running through it read output, understand whats happening
 - Test reviewing and issuing badge, then revoke
   - waiting for credly email, also waiting to see the badge in my credly account, dont see yet
 - add reference to badge guide at end of each lab -- reference correct event slug
+- make sure to note that you should put in your email that is tied to a credly account -- if dont have credly account -- think about instructions here
 
 ## UPdate Readme
 - update links and locations
 - update survey link, when created, and name reference
 - update to reference all labs and their checkpoints, etc. -- and where to start
+-  remoive bob oppt id reference
 
 ## SAMPLE LABS
 https://github.ibm.com/ibm-us-fsm-ce/us-fsm-ce-fis-bob-a-thon is one… here was a smaller one -
