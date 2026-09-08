@@ -226,23 +226,6 @@ After completing this lab, you should understand:
 
 ---
 
-## 🐛 Common Issues
-
-### Issue: Bob's summary misses something important
-**Solution:** Ask a direct follow-up: "What does [source] say about [specific topic]?"
-
-### Issue: Bob's deliverable is too long or too generic
-**Solution:** Be explicit: "Cut to 5 bullets, lead with the recommendation, no background."
-
-### Issue: Sources conflict and Bob picks one without flagging it
-**Solution:** Ask directly: "Where do the sources disagree? What's uncertain?"
-
-### Issue: Not sure what format to ask for
-**Solution:** Describe who will read it and what they need to do with it. Bob will infer
-a suitable format.
-
----
-
 ## 📝 Discussion Questions
 
 1. How does being able to ask targeted questions change the way you'd use a large document?
